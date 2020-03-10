@@ -5,7 +5,8 @@ var session = require('express-session');
 //var sanitizer = require('sanitizer');
 const bodyParser = require('body-parser');
 
-//mysql://b3832e8c1192ee:03e8efee@eu-cdbr-west-02.cleardb.net/heroku_4e31ecd5ff8d061?reconnect=true
+//mysql://b3832e8c1192ee:03e8efee@eu-cdbr-west-02.cleardb.net/heroku_4e31ecd5ff8d061?reconnect=true //cleardb mysql
+//mysql://lx42l6t8yyogjc6f:dtq3782vbz0ofsc9@jfrpocyduwfg38kq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/mhdvf9ni1jbyyx0a //jawsdb
 
 
 /*const conn = sql.createConnection({
@@ -16,10 +17,10 @@ const bodyParser = require('body-parser');
 });*/
 
 const conn = sql.createConnection({
-	host:'eu-cdbr-west-02.cleardb.net',
-	user:'b3832e8c1192ee',
-	password:'03e8efee',
-	database:'heroku_4e31ecd5ff8d061'	
+	host:'jfrpocyduwfg38kq.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+	user:'lx42l6t8yyogjc6f',
+	password:'dtq3782vbz0ofsc9',
+	database:'mhdvf9ni1jbyyx0a'	
 });
 
 /* GET home page. */
